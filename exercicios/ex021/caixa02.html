@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: rgb(102, 99, 99);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.493);
+            
+        }
+
+        a{
+            text-decoration: none;
+            font-weight: bold;
+            padding-right: 30px;
+            color: white;
+        }
+
+        a > :hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: white;
+            height: 270px;
+            margin: 10px;
+            border-radius: 20px 20px 20px 20px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
+        }
+
+        section{
+            margin: 10px;
+            padding-top: 5px;
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        aside{
+            background-color: rgb(136, 130, 130);
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            padding: 4px;
+            text-align: center;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+
+        #bola{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Painel</a>
+            <a href="#">Perfil</a>
+            <a href="#">Sacola</a>
+            <a href="#">Novidades</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <p>Esportes Política e Tecnologia</p>
+        </section>
+
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt odio inventore quasi dolorem enim animi voluptate accusamus quod expedita, rerum praesentium commodi harum non dolorum suscipit adipisci illum eos repellendus.</p>
+                <aside>
+                    <p>artigo escrito por joão silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>desenvolvido por eu</p>
+    </footer>
+
+    <div id="bola"></div>
+</body>
+</html>
