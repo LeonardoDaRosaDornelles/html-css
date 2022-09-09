@@ -7,6 +7,17 @@
     padding: 0px;
 }
 
+:root{
+    --fonte-padrao:sans-serif, arial, helvetica;
+    --fonte2:'Passion One';
+    --fonte3:'Sriracha';
+}
+
+body{
+    min-height: 100vh;
+    font-family: var(--fonte3);
+}
+
 header {
     text-align: center;
     background-color: black;
@@ -14,13 +25,65 @@ header {
     
 }
 
+header > h1{
+    padding-top: 50px;
+    text-transform: small-caps;font-family: var(--fonte2);;
+    font-size: 10vw;
+
+}
+
+header > p{
+    font-size: 3vw;
+    padding-bottom: 50px;
+    font-family: var(--fonte-padrao);
+}
+
 a{
+    font-weight: bolder;
     text-decoration: none;
     color: white;
-    font-weight: bolder;
 }
 
 a:hover{
     text-decoration: underline;
 }
 
+section{
+    font-size: 3.5vw;
+    padding-top:10vh ;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+}
+
+.texto{
+    background-color: white;
+}
+
+.foto{
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+
+}
+
+#foto2{
+    background-image: url(imagens/background002.jpg);
+}
+
+.foto > p{
+    display: inline-block;
+    line-height: 2em;
+    font-size: cover;
+    background-color: rgba(0, 0, 0, 0.521);
+}
+
+footer{
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    background-color: black;
+    color: white;
+    font-size: 1.1em;
+    padding-top: 10px;
+}
