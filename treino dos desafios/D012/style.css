@@ -2,46 +2,47 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
 
+:root{
+    --fonte-padrao:arial, helvetica, sans-serif;
+    --fonte02:'Passion One';
+    --fonte03:'Sriracha';
+}
+
 *{
     margin: 0px;
     padding: 0px;
 }
 
-:root{
-    --fonte-padrao:sans-serif, arial, helvetica;
-    --fonte2:'Passion One';
-    --fonte3:'Sriracha';
-}
-
 body{
     min-height: 100vh;
-    font-family: var(--fonte3);
+    font-family: var(--fonte03);
+    font-size: 3vw;
 }
 
-header {
+header{
     text-align: center;
-    background-color: black;
+    font-family: var(--fonte-padrao);
     color: white;
-    
+    background-color: black;
+
 }
 
 header > h1{
-    padding-top: 50px;
-    text-transform: small-caps;font-family: var(--fonte2);;
-    font-size: 10vw;
 
+    padding-top: 50px;
+    font-size: 6vw;
+    font-variant: small-caps;
+    font-family: var(--fonte02);
 }
 
 header > p{
-    font-size: 3vw;
     padding-bottom: 50px;
-    font-family: var(--fonte-padrao);
 }
 
 a{
+    color: white;
     font-weight: bolder;
     text-decoration: none;
-    color: white;
 }
 
 a:hover{
@@ -49,41 +50,34 @@ a:hover{
 }
 
 section{
-    font-size: 3.5vw;
-    padding-top:10vh ;
-    padding-bottom: 10vh;
-    padding-left: 30px;
+    padding: 10vh 0px;
 }
 
-.texto{
-    background-color: white;
+section > p{
+    line-height: 2em;
+   padding-left: 30px;
 }
 
 .foto{
-    background-image: url(imagens/background001.jpg);
-    background-position: right center;
+    padding-top: 50px;
+    background: url(imagens/background001.jpg) right center fixed;
     background-size: cover;
-    background-attachment: fixed;
-    color: white;
-
-}
-
-#foto2{
-    background-image: url(imagens/background002.jpg);
 }
 
 .foto > p{
+    background-color: rgba(0, 0, 0, 0.562);
     display: inline-block;
-    line-height: 2em;
-    font-size: cover;
-    background-color: rgba(0, 0, 0, 0.521);
+    color: white;
+}
+
+#foto2{
+    background: url(imagens/background002.jpg) center center;
 }
 
 footer{
     text-align: center;
-    font-family: var(--fonte-padrao);
     background-color: black;
     color: white;
-    font-size: 1.1em;
-    padding-top: 10px;
+    font-family: var(--fonte-padrao);
+    padding: 10px 0px;
 }
