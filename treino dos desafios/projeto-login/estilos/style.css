@@ -23,13 +23,18 @@ html,body{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
     overflow: hidden;
+
     border-radius: 20px;
     margin: auto;
     width: 300px;
-    height: 500px;
+    height: 520px;
     background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+
+    transform: translate(-50%,-50%);
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
 
 #formulario{
@@ -40,8 +45,31 @@ h1{
     text-align: center;
 }
 
+form > .campo > span{
+    color: white;
+    font-size: 40px;
+}
+
 form > .campo{
     border-radius: 8px;
+    width: 100%;
+    height: 40px;
+    background-color: #49a09d;
+    font-size: 1.2em;
+    margin-top: 8px ;
+}
+
+.caixa{
+    width: calc(100% - 47px);
+    height: 34px;
+    background-color: #6f2baf;
+    border-radius: 8px;
+    border:none;
+    transform: translateY(-14px) ;
+}
+
+input:focus-within{
+    background-color: white;
 }
 
 #formulario input[type=submit]{
@@ -53,9 +81,10 @@ form > .campo{
     border:none;
     border-radius:7px;
     cursor:pointer;
+    margin-top: 8px ;
 }
 
-form > input[type=submit]:hover{
+#formulario  input[type=submit]:hover{
     background-color:#2d6462;
 }
 

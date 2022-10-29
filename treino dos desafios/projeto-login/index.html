@@ -22,13 +22,17 @@
                 <p>Seja bem-vindo(a) novamente. faça login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
                 
                 <form action="action.php">
-                    <span class="material-symbols-outlined">person</span>
-                    <input type="email" name="email" id="iemail" required minlenght="8" maxlenght="30" placeholder="Digite sua senha" class="campo">
-                    <label for="iemail">Email</label><br>
-                    <span class="material-symbols-outlined">key</span>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="email" name="email" id="iemail" required minlenght="8" maxlenght="30" placeholder="Digite sua senha" class="caixa">
+                        <label for="iemail"></label><br>
+                    </div>
 
-                    <input type="password" name="senha" id="isenha" required minlength="8" maxlength="16" placeholder="Digite sua senha" class="campo">
-                    <label for="isenha">Senha</label><br>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">key</span>
+                        <input type="password" name="senha" id="isenha" required minlength="8" maxlength="16" placeholder="Digite sua senha" class="caixa">
+                        <label for="isenha"></label><br>
+                    </div>
 
                     <input type="submit" value="Entrar">
 
