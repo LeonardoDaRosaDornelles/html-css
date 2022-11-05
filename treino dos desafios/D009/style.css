@@ -1,0 +1,24 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body,html{
+    background-color: rgb(19, 17, 17);
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px ;
+}
+
+img{
+    width: 450px;
+    height: 265;
+}
+
+#videos{
+    text-align: center;
+}
